@@ -1,0 +1,40 @@
+header {
+  height: 50px;
+  width: 100%;
+  background-color: orange;
+}
+header nav ul {
+  /* background-color: blue; */
+  height: 50px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+* {
+font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* all elements are goint to keep theirs proper size */
+}
+header nav ul li {
+  margin: 0px 20px;
+}
+.aboutme{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+h1,h3,h4{
+    margin: 10px;
+}
+h3{
+    color: orange;
+}
+
