@@ -11,9 +11,13 @@ header nav ul {
   justify-content: center;
   align-items: center;
 }
-header nav ul li a {
+header nav ul li a  {
   text-decoration: none;
   color: black;
+  
+}
+a:hover {
+  background-color: rgb(133, 148, 68);
 }
 * {
 font-family: 'Roboto', sans-serif;
