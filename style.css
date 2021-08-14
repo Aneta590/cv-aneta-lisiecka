@@ -14,11 +14,30 @@ header nav ul {
 header nav ul li a  {
   text-decoration: none;
   color: black;
-  
+  position: relative;
+  transition: 0.4s ease;
+  /* width: 200px; */
+  display: block;
+  text-align: center;
+  cursor: pointer;
 }
-a:hover {
-  background-color: rgb(133, 148, 68);
+header nav ul li a::before{
+  content:"";
+  position:absolute;
+ bottom : 0;
+ left: 0;
+ width: 100%;
+ height: 2px;
+ background-color: white;
+ z-index: 5;
+ transform: scaleX(0);
+ transition: transform 0.5s;
+ transform-origin: 0 0;
 }
+header nav ul li a:hover::before{
+  transform: scaleX(1);
+}
+
 * {
 font-family: 'Roboto', sans-serif;
   margin: 0;
@@ -34,6 +53,7 @@ header nav ul li {
     flex-direction: column;
     align-items: center;
     margin-top: 50px;
+    margin-bottom: 100px;
 }
 h1,h3,h4{
     margin: 10px;
@@ -42,7 +62,7 @@ h3{
     color: orange;
 }
 section {
-margin: 50px auto;
+margin: 40px auto;
 width: 70%;
 
 }
@@ -50,4 +70,30 @@ width: 70%;
 section p{
     text-align: justify;
 }
-
+.aboutme h3{
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  word-spacing: 5px;
+  margin-bottom: 30px;
+}
+.aboutme h4{
+  text-align: center;
+  font-size: 18px;
+  line-height: 2;
+}
+.aboutme h1{
+ font-size: 28px;
+}
+section h4{
+  font-size: 20px;
+  margin-left: 0;
+  padding-left: 0;
+}
+section p{
+  line-height: 1.8;
+}
+img{
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
