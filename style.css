@@ -97,3 +97,7 @@ img{
   justify-content: center;
   margin: 0 auto;
 }
+#contact a{
+padding: 10px;
+ text-decoration: none;
+}
